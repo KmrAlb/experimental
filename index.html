@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/049e240414.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="/home/bali/music/personalwb/photos/huh.jpg" class="logo" >
+                    <ul>
+                        <li><a href='#'> Home</a></li>
+                        <li><a href='#'> About</a></li>
+                        <li><a href='#'> Services</a></li>
+                        <li><a href='#'> Portfolio</a></li>
+                        <li><a href='#'> Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>Researcher</p>
+                    <h3>Hi, I am <span> Bali</span> <br> from ThugSauceSequal</h3>
+                </div>
+            </div>
+<!-------------------------about---------------------------->
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="/home/bali/music/personalwb/photos/sesh.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h3 class="sub-title">About me</h3>
+                        <p> am bouta cum am bouta cum</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link"  onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>Software Devlopment</span><br>random fuckery</li>
+                                <li><span>System Administration</span><br>random fuckery</li>
+                                <li><span>Buisness Devlopment</span><br>random fuckery</li>
+                    </ul>
+                        </div>
+                        <div class="tab-contents"  id="Experience">
+                            <ul>
+                                <li><span>babu rider memos stall</span><br>Memos wala</li>
+                                <li><span>lal biduri fitness</span><br>gym trainee only foreceps</li>
+                                <li><span>Herbal ganja ciggerate</span><br>Founder</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>Red light internal school</span><br>random fuckery</li>
+                                <li><span>ISIS</span><br>random fuckery</li>
+                                <li><span>quantum institute of rizzology</span><br>random fuckery</li>
+                    </ul>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-------------services---------------->
+<div id="services">
+    <div class="container">
+        <h3 class="sub-title">My Serives</h3>
+        <div class="service-list">
+            <div>
+                <i class="fa-solid fa-ticket"></i>
+                <h2>Web Design</h2>
+                <p>what the fuck is even this </p> 
+                <a href="#">learn more</a>
+            </div>
+
+            <div><i class="fa-solid fa-eye"></i>
+                <h2>Rimming</h2>
+                <p>what the fuck is even this </p> 
+                <a href="#">learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-lemon"></i>
+                <h2>Head lock</h2>
+                <p>what the fuck is even this </p> 
+                <a href="#">learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!---------------portfolio-------->
+<div id="portfilio">
+    <div class="container">
+        <h3 class="sub-title">My Work</h3>
+        <div class="work-list">
+            <div class="work">
+                <img src="/home/bali/music/personalwb/photos/homiside.jpg">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p> this contenains the fuckery i did a month ago</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="/home/bali/music/personalwb/photos/fuckit.jpg">
+                <div class="layer">
+                    <h3> Research</h3>
+                    <p> this contenains the fuckery i did a month ago</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="/home/bali/music/personalwb/photos/homiside.jpg">
+                <div class="layer">
+                    <h3>Corn App</h3>
+                    <p> this contenains the fuckery i did a month ago</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+    </body>
+</html>
