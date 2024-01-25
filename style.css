@@ -13,7 +13,7 @@ body {
 #header {
     width: 100%;
     height: 100vh; /* Use vh (viewport height) instead of percentage for full height */
-    background-image: url(/home/bali/music/personalwb/photos/hello.jpg);
+    background-image: url(hello.jpg);
     background-size: cover;
     background-position: center;
 }
