@@ -17,7 +17,7 @@ body {
 #header {
     width: 100%;
     height: 100vh; /* Use vh (viewport height) instead of percentage for full height */
-    background-image: url(pic.jpg);  #fill this later
+    background-image: url();  #fill this later
     background-size: cover;
     background-position: center;
 }
@@ -45,7 +45,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: rgb(0, 0, 0);
+    color: white;
     text-decoration: none;
     font-size: 18px;
     position: relative;
